@@ -2,9 +2,9 @@ package chapter3
 
 //type definitions
 case class Entry (
-  firstName:String,
-  lastName: String,
-  phone: String)
+  firstName: String,
+  lastName:  String,
+  phone:     String)
 
 object Chapter3 {
 
