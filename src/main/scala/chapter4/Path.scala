@@ -24,7 +24,7 @@ object Path {
 
   def ls(file: Path): List[Path] = file match {
     case Directory(_, fs) => fs
-    case _               => List.empty
+    case _                => List.empty
   }
 
   def size(file: Path): Option[Int] = file match {
