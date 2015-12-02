@@ -2,7 +2,7 @@ package chapter4
 
 object FileOperations {
 
-  def allFiles(root: Path):List[Path] = root :: (Path.ls(root) flatMap (allFiles _))
+  def allFiles(root: Path):List[Path] = root :: (Path.ls(root) flatMap allFiles)
 
   def `allFiles'`(file: Path):List[Path] =  ???
 
@@ -20,7 +20,7 @@ object FileOperations {
     Path.root.println
 
     println("Printing all the files:")
-    allFiles(Path.root).map(_.println)
+    allFiles(Path.root).foreach(_.println)
   }
 
 }

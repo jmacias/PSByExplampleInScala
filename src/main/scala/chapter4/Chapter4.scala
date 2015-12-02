@@ -93,6 +93,7 @@ object Chapter4 {
     println(reverseFold(1::2::3::Nil))
 
     //concatMap (\n -> [n, n * n]) (1 .. 5)
+    // >>= is flatMap is bind
     println((1 to 5).toList >>= (n => List(n, n * 2)))
     println((1 to 5).toList flatMap (n => List(n, n * 2)))
 
